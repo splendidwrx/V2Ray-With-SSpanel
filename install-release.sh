@@ -128,7 +128,7 @@ downloadV2Ray(){
     rm -rf /tmp/v2ray
     mkdir -p /tmp/v2ray
     colorEcho ${BLUE} "Downloading V2Ray."
-    DOWNLOAD_LINK="https://static.cowtransfer.com/anonymous%2Fb57cb1e3-3476-46b7-98e1-26e6f8fbb687%2FV2Ray-With-SSpanel-1.2.zip?t-s=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6Imlsb3ZlY293dHJhbnNmZXIyMDIxXzE2MTUzNTU0ODY1ODkifQ.6IXK499nr-gLDAmKd3N7YOqBKJfoPTpAPszJSwX5ArU&t-c=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6IjIwMjF8M3wxMHwxMyJ9.X7ZTIgKH-EiViE3TTwI85-jzPM5WYLw8rkr6gRlkeW8&attname=V2Ray-With-SSpanel-1.2.zip"
+    DOWNLOAD_LINK="https://github.com/splendidwrx/V2Ray-With-SSpanel/releases/download/${NEW_VER}/v2ray-linux-${VDIS}.zip"
     echo ${DOWNLOAD_LINK}
     curl ${PROXY} -L -H "Cache-Control: no-cache" -o ${ZIPFILE} ${DOWNLOAD_LINK}
     if [ $? != 0 ];then
